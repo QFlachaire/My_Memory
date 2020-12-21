@@ -190,6 +190,7 @@ class Board extends React.Component {
         console.log("We are in! ")
         nbGames += 1
         this.endgame()
+        
       }
 
       return {
