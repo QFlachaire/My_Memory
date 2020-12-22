@@ -1,34 +1,75 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 40px;
+  background: radial-gradient(#405BF5, #3248C2);
+
 }
 
 ol, ul {
   padding-left: 30px;
+  
+  
 }
 
 .board-row:after {
   clear: both;
   content: "";
   display: table;
+  
+}
+
+.text-nicknames {
+  background: transparent;
+  border-radius: 0.4em;
+  width: 5em;
+}
+
+.text-paires {
+  background: transparent;
+  border-radius: 0.4em;
+  width: 3em;
+}
+
+.button {
+  border-radius: 0.7em;
+  margin: 0.5em;
+  cursor: pointer;
+  border: 0.1em solid #1a202c;
+  padding: 0.6em;
+  font-size: 1.3em;
+  
+ 
+  background: transparent;
+ 
+  transition: all 0.1s ease-in;
+}
+
+.button:hover {
+  background: #1a202c;
+  color: #ffffff;
+  
+}
+
+.titleTHE {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  background: transparent;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  background: transparent;
 }
 
 .status {
-  margin-bottom: 10px;
-}
-
-.img {
-  width: 40;
-  height: 40px;
-}
-
-.transition {
-  transition-duration: 1s;
-
+  background: transparent;
 }
 
 .square_scores {
-  background: #fff;
+  background: #1E2C75;
   border: 1px solid #999;
   float: left;
   font-size: 12px;
@@ -40,23 +81,36 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 50px;
+  
+}
+
+.square-scores {
+  background: #1E2C75;
+  font-size: 1em;
+  border:  0.01em solid #999;
+  height: 2em;
+  width: 5em;
+
+  border: 1px solid #405BF5;
 }
 
 .square {
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
+  background: #1E2C75;
   font-weight: bold;
+  cursor: pointer;
+  border: 0.01em solid #405BF5;
+  height: 2em;
+  width: 2em;
+  font-size: 24px;
+
   line-height: 34px;
-  height: 40px;
   margin-right: -1px;
   margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 40px;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  margin-left: auto;
+  margin-right: auto;
+
+
 }
 
 .square:focus {
@@ -67,9 +121,13 @@ ol, ul {
   background: #ddd;
 }
 
+.table {
+
+}
+
 .game {
-  display: flex;
-  flex-direction: row;
+  text-align: center
+
 }
 
 .game-info {
